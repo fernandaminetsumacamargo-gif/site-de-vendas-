@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ri Happy Clone - A Loja de Brinquedos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo.png" alt="Logo Ri Happy" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#promocoes">Promoções</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="carrinho" onclick="mostrarCarrinho()">
+                🛒 <span id="contador-carrinho">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Nossos Brinquedos</h1>
+        <section id="produtos" class="grade-produtos">
+            <div class="produto">
+                <img src="images/produto1.jpg" alt="Boneca Super">
+                <h3>Boneca Super Fashion</h3>
+                <p class="preco">R$ 79,90</p>
+                <button onclick="adicionarAoCarrinho('Boneca Super Fashion', 79.90)">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="produto">
+                <img src="images/produto2.jpg" alt="Blocos de Montar">
+                <h3>Blocos de Montar Gigantes</h3>
+                <p class="preco">R$ 149,90</p>
+                <button onclick="adicionarAoCarrinho('Blocos de Montar Gigantes', 149.90)">Adicionar ao Carrinho</button>
+            </div>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ri Happy Clone. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
